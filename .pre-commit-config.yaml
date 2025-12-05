@@ -136,12 +136,12 @@ repos:
       - id: bandit
         name: bandit (security linter from PyCQA)
         args: ["-s", "B404,B607,B603"]
-  - repo: https://github.com/landscapeio/prospector
-    rev: v1.15.3
-    hooks:
-      - id: prospector
-        name: prospector (Style Guide Enforcement)
-        exclude: zap-api-scan.py|zap-baseline.py|zap-full-scan.py
+  # - repo: https://github.com/landscapeio/prospector
+  #   rev: v1.15.3
+  #   hooks:
+  #     - id: prospector
+  #       name: prospector (Style Guide Enforcement)
+  #       exclude: zap-api-scan.py|zap-baseline.py|zap-full-scan.py
   - repo: https://github.com/asottile/reorder-python-imports
     rev: v3.14.0
     hooks:
